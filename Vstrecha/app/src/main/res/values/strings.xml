@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Vstrecha</string>
+    <string name="vsrecha">Vsrecha</string>
+    <string name="password">password</string>
+    <string name="example_gmail_com">example@gmail.com</string>
+    <string name="missPass"><u>Забыли пароль?</u></string>
+    <string name="enter">Войти</string>
+    <string name="google">Вход через Google</string>
+    <string name="registration">Регистрация</string>
+    <string name="google_reg">Регистрация через Google</string>
+    <string name="reg">Регистрация</string>
+</resources>

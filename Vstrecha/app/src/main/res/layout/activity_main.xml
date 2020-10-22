@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="@string/vsrecha"
+        android:textColor="#7C0A02"
+        android:textSize="90sp"
+
+     />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/example_gmail_com"
+        android:inputType="textEmailAddress"
+        android:autofillHints="" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="numberPassword"
+        android:autofillHints="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="100dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/missPass"
+            android:textColor="#7C0A02" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/enter"
+            android:backgroundTint="@color/white"
+            android:textStyle="bold"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="#7C0A02" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reg"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="#7C0A02" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:text="@string/google_reg"
+        android:backgroundTint="@color/white"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_weight="1"
+        android:textColor="#7C0A02" />
+
+</LinearLayout>
