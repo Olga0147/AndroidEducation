@@ -5,17 +5,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/grad"
-    tools:context=".MainActivity">
+    tools:context=".SecondActivity">
 
-    <EditText
-        android:id="@+id/edit_text"
+
+    <TextView
+        android:id="@+id/textV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_text"
-         />
+       />
 
     <Button
-        android:id="@+id/btn_1"
+        android:id="@+id/btn_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/enter"

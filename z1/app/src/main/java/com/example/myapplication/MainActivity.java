@@ -2,6 +2,8 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.SearchManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -21,9 +23,16 @@ public class MainActivity extends AppCompatActivity {
             if(!TextUtils.isEmpty(editText.getText())){
                 String nameString=editText.getText().toString();
                 Toast.makeText(MainActivity.this,nameString,Toast.LENGTH_SHORT).show();
+
+                Intent secondIntent =
+                        new Intent(MainActivity.this, SecondActivity.class);
+                secondIntent.putExtra(SecondActivity.TEXT, nameString);
+                startActivity(secondIntent);
+
             }
         }
     };
+
 
 
     @Override
@@ -32,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         editText = findViewById(R.id.edit_text);
-        button = findViewById(R.id.btn_enter);
+        button = findViewById(R.id.btn_1);
 
         button.setOnClickListener(onClickListener);
     }
